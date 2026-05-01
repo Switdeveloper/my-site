@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Six AI — Design Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <span class="logo-text">The Six</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-label reveal">
+                <span class="label-dot"></span>
+                <span>Design Agency</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line" data-text="We craft">We craft</span>
+                <span class="title-line" data-text="digital">digital</span>
+                <span class="title-line" data-text="experiences">experiences</span>
+            </h1>
+            <p class="hero-subtitle reveal">
+                A strategic design studio that transforms ambitious ideas into 
+                compelling digital products. We blend creativity with precision 
+                to build brands that resonate and convert.
+            </p>
+            <div class="hero-cta reveal">
+                <a href="#work" class="btn btn-primary">
+                    <span>View Our Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+            <div class="hero-stats reveal">
+                <div class="stat">
+                    <span class="stat-number" data-count="150">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="12">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="40">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Awards Won</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="section work" id="work">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Selected Work</span>
+                <h2 class="section-title">Projects that define us</h2>
+                <p class="section-desc">Each project is a journey from concept to reality. We partner with visionary brands to create digital experiences that leave lasting impressions.</p>
+            </div>
+            <div class="work-grid">
+                <article class="work-card reveal" data-delay="0">
+                    <div class="work-image">
+                        <div class="work-image-inner">
+                            <div class="work-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)"></div>
+                        </div>
+                        <div class="work-overlay">
+                            <span class="work-category">Brand Identity</span>
+                            <h3 class="work-title">Nexus Finance</h3>
+                            <p class="work-desc">Complete rebrand for a fintech disruptor. Modern identity system with digital-first approach.</p>
+                            <a href="#" class="work-link">
+                                <span>View Project</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card reveal" data-delay="100">
+                    <div class="work-image">
+                        <div class="work-image-inner">
+                            <div class="work-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"></div>
+                        </div>
+                        <div class="work-overlay">
+                            <span class="work-category">Web Design</span>
+                            <h3 class="work-title">Bloom Wellness</h3>
+                            <p class="work-desc">Immersive digital platform for a wellness brand. Calming aesthetics meet intuitive UX.</p>
+                            <a href="#" class="work-link">
+                                <span>View Project</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card reveal" data-delay="200">
+                    <div class="work-image">
+                        <div class="work-image-inner">
+                            <div class="work-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"></div>
+                        </div>
+                        <div class="work-overlay">
+                            <span class="work-category">E-Commerce</span>
+                            <h3 class="work-title">Orion Tech</h3>
+                            <p class="work-desc">High-converting e-commerce experience. 340% increase in conversion rate.</p>
+                            <a href="#" class="work-link">
+                                <span>View Project</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card reveal" data-delay="300">
+                    <div class="work-image">
+                        <div class="work-image-inner">
+                            <div class="work-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"></div>
+                        </div>
+                        <div class="work-overlay">
+                            <span class="work-category">Product Design</span>
+                            <h3 class="work-title">Zenith SaaS</h3>
+                            <p class="work-desc">B2B platform redesign. Simplified complex workflows into elegant interfaces.</p>
+                            <a href="#" class="work-link">
+                                <span>View Project</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">What We Do</span>
+                <h2 class="section-title">Services tailored for growth</h2>
+                <p class="section-desc">From strategy to execution, we provide end-to-end solutions that drive real business results.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal" data-delay="0">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Brand Strategy</h3>
+                    <p class="service-desc">Deep market research and strategic positioning that defines your unique value proposition and builds lasting brand equity.</p>
+                    <ul class="service-list">
+                        <li>Market Research</li>
+                        <li>Brand Positioning</li>
+                        <li>Messaging Strategy</li>
+                        <li>Competitive Analysis</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal" data-delay="100">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <path d="M21 15l-5-5L5 21"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Visual Identity</h3>
+                    <p class="service-desc">Distinctive visual systems that capture attention and communicate your brand's personality across every touchpoint.</p>
+                    <ul class="service-list">
+                        <li>Logo Design</li>
+                        <li>Color Systems</li>
+                        <li>Typography</li>
+                        <li>Brand Guidelines</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal" data-delay="200">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 21h8"/>
+                            <path d="M12 17v4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Web Design</h3>
+                    <p class="service-desc">Pixel-perfect, responsive websites that provide exceptional user experiences and drive conversions.</p>
+                    <ul class="service-list">
+                        <li>UI/UX Design</li>
+                        <li>Responsive Development</li>
+                        <li>Interaction Design</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal" data-delay="300">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <path d="M3.27 6.96L12 12.01l8.73-5.05"/>
+                            <path d="M12 22.08V12"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <p class="service-desc">Data-driven campaigns that reach your audience and deliver measurable ROI on every channel.</p>
+                    <ul class="service-list">
+                        <li>SEO & SEM</li>
+                        <li>Social Media</li>
+                        <li>Content Strategy</li>
+                        <li>Analytics & Reporting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process" id="process">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Our Process</span>
+                <h2 class="section-title">How we work</h2>
+                <p class="section-desc">A proven methodology that transforms vision into reality, every single time.</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-item reveal" data-delay="0">
+                    <div class="process-number">01</div>
+                    <div class="process-content">
+                        <h3 class="process-title">Discovery</h3>
+                        <p class="process-desc">Deep dive into your business, audience, and goals. We listen, research, and uncover the insights that will drive your project forward.</p>
+                    </div>
+                </div>
+                <div class="process-item reveal" data-delay="100">
+                    <div class="process-number">02</div>
+                    <div class="process-content">
+                        <h3 class="process-title">Strategy</h3>
+                        <p class="process-desc">Translating insights into action. We craft a clear roadmap with defined milestones, deliverables, and success metrics.</p>
+                    </div>
+                </div>
+                <div class="process-item reveal" data-delay="200">
+                    <div class="process-number">03</div>
+                    <div class="process-content">
+                        <h3 class="process-title">Design</h3>
+                        <p class="process-desc">Bringing ideas to life through exploration, iteration, and refinement. Every pixel serves a purpose.</p>
+                    </div>
+                </div>
+                <div class="process-item reveal" data-delay="300">
+                    <div class="process-number">04</div>
+                    <div class="process-content">
+                        <h3 class="process-title">Delivery</h3>
+                        <p class="process-desc">Flawless execution and launch. We don't disappear after handoff—we ensure you're set up for ongoing success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content reveal">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">We're more than designers</h2>
+                    <p class="about-text">Founded in 2012, The Six AI is a collective of strategists, designers, and developers united by a passion for creating meaningful digital experiences.</p>
+                    <p class="about-text">We believe great design is more than aesthetics—it's about solving problems, telling stories, and driving results. Every project we take on is an opportunity to push boundaries and deliver work that exceeds expectations.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Award-winning design team</span>
+                        </div>
+                        <div class="about-feature">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Full-service capabilities</span>
+                        </div>
+                        <div class="about-feature">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Results-driven approach</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual reveal">
+                    <div class="about-image">
+                        <div class="about-image-inner">
+                            <div class="about-placeholder"></div>
+                        </div>
+                        <div class="about-badge">
+                            <span class="badge-number">12+</span>
+                            <span class="badge-text">Years of Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">Words from our clients</h2>
+            </div>
+            <div class="testimonials-slider" id="testimonials-slider">
+                <div class="testimonials-track">
+                    <div class="testimonial active">
+                        <p class="testimonial-text">"The Six AI transformed our entire digital presence. Their strategic approach and flawless execution delivered results beyond our wildest expectations."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MJ</div>
+                            <div class="author-info">
+                                <span class="author-name">Michael Jensen</span>
+                                <span class="author-role">CEO, Nexus Finance</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">"Working with them was a revelation. They understood our vision from day one and delivered a brand identity that truly represents who we are."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SC</div>
+                            <div class="author-info">
+                                <span class="author-name">Sarah Chen</span>
+                                <span class="author-role">Founder, Bloom Wellness</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">"The attention to detail and strategic thinking set them apart. Our new website has become our most powerful sales tool."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">RD</div>
+                            <div class="author-info">
+                                <span class="author-name">Robert Davis</span>
+                                <span class="author-role">CMO, Orion Tech</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-nav">
+                    <button class="testimonial-btn prev" id="testimonial-prev" aria-label="Previous">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                    </button>
+                    <button class="testimonial-btn next" id="testimonial-next" aria-label="Next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-content reveal">
+                    <span class="section-label">Get Started</span>
+                    <h2 class="section-title">Let's create something amazing</h2>
+                    <p class="contact-text">Ready to transform your digital presence? We'd love to hear about your project. Drop us a line and let's start the conversation.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <path d="M22 6l-10 7L2 6"/>
+                            </svg>
+                            <span>hello@thesixai.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>New York, NY</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" placeholder="Your company">
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select a range</option>
+                            <option value="5k-10k">$5,000 - $10,000</option>
+                            <option value="10k-25k">$10,000 - $25,000</option>
+                            <option value="25k-50k">$25,000 - $50,000</option>
+                            <option value="50k+">$50,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-group-full">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your project..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-text">The Six</span>
+                        <span class="logo-dot"></span>
+                    </a>
+                    <p class="footer-tagline">Crafting digital experiences that transform brands and drive growth.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Brand Strategy</a></li>
+                            <li><a href="#">Visual Identity</a></li>
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Dribbble</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Six AI. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
